@@ -144,13 +144,13 @@ export default class BufCamera {
   }
 
   /* ------------------------ Horizontal mirror or flip ----------------------- */
-  public mirror(isMirror: boolean): ReiCamera {
+  public mirror(isMirror: boolean): BufCamera {
     this.video.style.transform = `scaleX(${isMirror ? "-1" : "1"})`;
     return this;
   }
 
   /* ----------------------- Flip front and rear camera ----------------------- */
-  public flipCamera(mode?: FacingModeProps): ReiCamera {
+  public flipCamera(mode?: FacingModeProps): BufCamera {
     if (mode) {
       this.setConstraint({
         video: {
@@ -206,7 +206,7 @@ export default class BufCamera {
   /*                           'set' prefix function                            */
   /* -------------------------------------------------------------------------- */
 
-  public setConstraint(constraint: MediaConstraintsProps): ReiCamera {
+  public setConstraint(constraint: MediaConstraintsProps): BufCamera {
     this.customConstraint = constraint;
     return this;
   }
