@@ -1,0 +1,45 @@
+{
+  "name": "@malabudif/angular-camera",
+  "version": "1.3.1",
+  "description": "Camera Support for Angular",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup"
+  },
+  "keywords": [
+    "shapshot",
+    "snapster",
+    "lensify",
+    "vue camera",
+    "vue shutter",
+    "shutter",
+    "vue",
+    "camera"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/malabudif/vue-snapster.git"
+  },
+  "bugs": {
+    "url": "https://github.com/malabudif/vue-snapster.git/issues"
+  },
+  "author": "malabudif",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^20.11.20",
+    "@typescript-eslint/eslint-plugin": "^7.0.2",
+    "@typescript-eslint/parser": "^7.0.2",
+    "eslint": "^8.57.0",
+    "prettier": "^3.2.5",
+    "tsup": "^8.0.2",
+    "typescript": "^5.3.3"
+  },
+  "dependencies": {
+    "console-log-json": "^3.0.2"
+  }
+}
